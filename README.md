@@ -22,35 +22,35 @@ Hibernate ORM 6.6.3 - объектно-реляционное отображен
 HikariCP - пул соединений с базой данных <br>
 Fabric API - модификация игры <br>
 
-Установка
-Требования
-Minecraft 1.21
-Fabric Loader
-PostgreSQL сервер
-Java 21
+Установка <br>
+Требования <br>
+Minecraft 1.21 <br> 
+Fabric Loader <br>
+PostgreSQL сервер <br>
+Java 21 <br>
 
-Использование
-Запустите Minecraft с установленным модом
-Нажмите клавишу M (англ. по умолчанию) или Ь (русская по умолчанию) для открытия интерфейса сообщений
-Введите сообщение (до 256 символов)
-Нажмите "Отправить" - сообщение сохранится в базе данных
+Использование <br>
+Запустите Minecraft с установленным модом <br>
+Нажмите клавишу M (англ. по умолчанию) или Ь (русская по умолчанию) для открытия интерфейса сообщений v
+Введите сообщение (до 256 символов) <br>
+Нажмите "Отправить" - сообщение сохранится в базе данных <br>
 
-Конфигурация
-Настройка базы данных
-Файл resources/hibernate.cfg.xml содержит все настройки подключения:
-URL базы данных
-Имя пользователя и пароль
-Настройки пула соединений
-Параметры диалекта PostgreSQL
+Конфигурация <br>
+Настройка базы данных <br>
+Файл resources/hibernate.cfg.xml содержит все настройки подключения: <br>
+URL базы данных <br>
+Имя пользователя и пароль <br>
+Настройки пула соединений <br>
+Параметры диалекта PostgreSQL <br>
 
-Структура базы данных
-Таблица messages:
-CREATE TABLE messages (
-id SERIAL PRIMARY KEY,
-uuid UUID NOT NULL,
-text VARCHAR(256) NOT NULL,
-created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
+Структура базы данных <br>
+Таблица messages: <br>
+CREATE TABLE messages ( <br>
+id SERIAL PRIMARY KEY, <br>
+uuid UUID NOT NULL, <br>
+text VARCHAR(256) NOT NULL, <br>
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP <br>
+); <br>
 
 Разработка
 Сборка из исходного кода
