@@ -60,16 +60,16 @@ git clone <репозиторий>
 
 Структура проекта
 messagemod/
- src/main/java/messagemod/
-  MessageMod.java          # Основной класс мода
-  MessageModClient.java    # Клиентская часть
-  MessageEntity.java       # Сущность сообщения
-  MessageRepository.java   # Репозиторий БД
-  MessagePayload.java      # Сетевой пакет
-  MessageInputScreen.java  # Интерфейс ввода
- resources/
-  hibernate.cfg.xml        # Конфигурация БД
-build.gradle                 # Конфигурация сборки
+├── src/main/java/messagemod/
+│   ├── MessageMod.java          # Основной класс мода
+│   ├── MessageModClient.java    # Клиентская часть
+│   ├── MessageEntity.java       # Сущность сообщения
+│   ├── MessageRepository.java   # Репозиторий БД
+│   ├── MessagePayload.java      # Сетевой пакет
+│   └── MessageInputScreen.java  # Интерфейс ввода
+├── resources/
+│   └── hibernate.cfg.xml        # Конфигурация БД
+└── build.gradle                 # Конфигурация сборки
 
 Поиск и устранение неисправностей
 Проблемы с подключением к БД
